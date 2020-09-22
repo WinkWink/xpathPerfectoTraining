@@ -7,11 +7,29 @@ resource-id com.andriod.vending:id/i_title
 
 1. Change the locator to use the text value 
 
-
-//*[text()="Snapchat"]
+Answer: //*[text()="Snapchat"]
 
 2. Change the locator to use the text value 
-Object locator	//*[@class="gb_Ea gb_Ha gb_Jb"]
+Object locator	c
 XPath /html[1]/body[1]/div[2]/header[1]/div[3]/div[1]/div[1]/div[1]/div[1]/a[1]
 Text Sign In
-resource-id com.andriod.vending:id/i_title
+resource-id gb_Ea gb_Ha gb_Jb
+
+Answer: //*[text()="Sign in"]
+
+3. Change the below XPath to capture the City regardless of the current weather. 
+
+//*[@label="New York, Cloudy,65, Tuesday, Partly Cloudy, High 85, Low 65"]
+
+Answer //*[text="New York"]
+
+4. Select a blue Toyota Yaris 
+<car color="blue" make="Toyota" mpg="60">Yaris</car>
+<car color="red" make="Mazda" mpg="50">Mazda 3</car>
+<car color="orange" make="Toyota" mpg="60">Yaris</car>
+
+Answer: //*[@color="blue" and @make="Toyota" and @model="Yaris"]
+
+5. Select all of the pink cars with the mpg of 45 
+
+Answer: //*[@color="pink" and @mpg="45"]
